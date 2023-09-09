@@ -91,6 +91,14 @@ div.hero h2 {
     margin: 20px;
 }
 
+/*This is an A11y Accessibility change-->
+<!--It is a common practice to only have 1 <h1> tag in the entire website which is usually used for
+denoting the heading. Other sub-headings can then use header tags from h2-h6. This is an important 
+A11y change.*/
+h3 {
+    font-size: 18px;
+}
+
 @media screen and (min-width: 768px) {
     .container .div.text-box {
         margin: 10px;
