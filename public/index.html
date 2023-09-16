@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This is a SEO change.-->
+    <!--Added the meta tag with name description which contains important information regarding this personal 
+    budget website. Adding this information helps in achieving a higher SEO score.-->
+    <meta name="description" content="This is a Personal budget website used to manage,track and update your
+    personal budget. This was created by Saumit Chinchkhandi.">
+
+    <!--This is a SEO change-->
+    <!-- The open graph tags are used for increasing and modifying website appearance on social media platforms like 
+    Facebook. More impressions will let more users view your site and is also an important SEO practice.-->
+    <meta name="og:title" property="og:title" content="Personal Budget Website" />    
+    <meta property="og:description" content="A Budget website for tracking and analyzing your spending and providing
+    detailed insights and patterns!!" />
+    <meta property="og:type" content="website" />
+
+    <title>Personal Budget</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    
+    <nav>
+        <!-- This is a Semantic HTML Change -->
+        <!-- The <nav> element tag encloses section of the code intended to have navigation links to 
+        different sub pages(About, Login, Google) in the website. This is an important semantic
+        html change as it lets browser know the content enclosed in these tags contains navigation links. -->
+        <div class="menu">
+            <ul>
+                <li><a href="/">Homepage</a></li>
+                <!--This is a SEO change.-->
+                <!--Added the rel="nofollow" attribute to the anchor tag which is pointing to google.com. This helps in
+                not increasing domain authority of an external website used in anchor tag so no other websites are 
+                getting any advantage by just mentioning their URL's. This is also an important SEO practice. -->
+                <li><a href="./about.html" rel="nofollow">About</a></li>
+                <li><a href="./login.html" rel="nofollow">Login</a></li>
+                <li><a href="https://google.com" rel="nofollow">Google</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <div class="hero">
+        <h1>Personal Budget</h1>
+        <h2>A personal-budget management app</h2>
+    </div>
+
+
+    <!--This is an A11y change-->
+    <!--I have added the role="main" which is an ARIA landmark which are an important feature to increase page accessibility.
+    This particular div has the role main attached to it and each website should have at most 1 main landmark.-->
+    <div role="main" class="container center">
+
+        <div class="page-area">
+
+            <article role="region">
+                <!-- This is a Semantic HTML Change -->
+                <!-- The <article> element tag encloses independent content inside a section of a website.
+                In this website, I have used article tag to enclose different features of my personal budget site. -->
+                <div class="text-box">
+                    <!--This is an A11y Accessibility change-->
+                    <!--It is a common practice to only have 1 <h1> tag in the entire website which is usually used for
+                    denoting the heading. Other sub-headings can then use header tags from h2-h6. This is an important 
+                    A11y change.-->
+                    <h3>Stay on track</h3>
+                    <p>
+                        Do you know where you are spending your money? If you really stop to track it down,
+                        you would get surprised! Proper budget management depends on real data... and this
+                        app will help you with that!
+                    </p>
+                </div>
+            </article>
+            
+            <article role="region">
+                <div class="text-box">
+                    <h3>Alerts</h3>
+                    <p>
+                        What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
+                    </p>
+                </div>
+            </article>
+            
+            
+            <article role="region">
+                <div class="text-box">
+                    <h3>Results</h3>
+                    <p>
+                        People who stick to a financial plan, budgeting every expense, get out of debt faster!
+                        Also, they to live happier lives... since they expend without guilt or fear... 
+                        because they know it is all good and accounted for.
+                    </p>
+                </div>
+            </article>
+            
+    
+            <article role="region">
+                <div class="text-box">
+                    <h3>Free</h3>
+                    <p>
+                        This app is free!!! And you are the only one holding your data!
+                    </p>
+                </div>
+            </article>
+            
+    
+            <article role="region">
+                <div class="text-box">
+                    <h3>Stay on track</h3>
+                    <p>
+                        Do you know where you are spending your money? If you really stop to track it down,
+                        you would get surprised! Proper budget management depends on real data... and this
+                        app will help you with that!
+                    </p>
+                </div>
+            </article>
+            
+            <article role="region">
+                <div class="text-box">
+                    <h3>Alerts</h3>
+                    <p>
+                        What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
+                    </p>
+                </div>
+            </article>
+            
+    
+            <article role="region">
+                <div class="text-box">
+                    <h3>Results</h3>
+                    <p>
+                        People who stick to a financial plan, budgeting every expense, get out of debt faster!
+                        Also, they to live happier lives... since they expend without guilt or fear... 
+                        because they know it is all good and accounted for.
+                    </p>
+                </div>
+            </article>
+            
+    
+            <article role="region">
+                <!--This is an A11y Accessibility change-->
+                <!--Having role="region" is used to mark region in the website used to mark significant regions.-->
+                <div class="text-box">
+                    <h3>Chart</h3>
+                    <p>
+                        <canvas id="myChart" width="400" height="400"></canvas>
+                    </p>
+                </div>
+            </article>
+            
+        </div>
+
+    </div>
+
+    <footer>
+        <!-- This is a Semantic HTML Change -->
+        <!-- The <footer> element tag encloses section of the code intended to have author, version
+        and copyright information of the website. This is also an important Semantic HTML change
+        as it helps the browser and other developer better understand and structure the code.-->
+        <div role="contentinfo" class="bottom">
+            <!--This is an A11y Accessibility change-->
+            <!--Having role="contentinfo" is used to mark region in the website used to contain identifying
+            information like author, copyright etc.-->
+            <div class="center">
+                All rights reserved &copy; Saumit Chinchkhandi
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js" integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var dataSource = {
+            datasets: [
+                {
+                    data:[],
+                    backgroundColor: [
+                        '#ffcd56',
+                        '#ff6384',
+                        '#36a2eb',
+                        '#fd6b19'
+                    ],
+                }
+            ],
+            labels: []
+        };
+
+        function createChart(){
+            var ctx = document.getElementById("myChart").getContext("2d");
+            var myPieChart = new Chart(ctx, {
+                type: 'pie',
+                data: dataSource
+            });
+        }
+
+        function getBudget() {
+            axios.get('/budget')
+            .then(function (res){
+                console.log(res);
+                for(var i=0; i < res.data.myBudget.length; i++){
+                    dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
+                    dataSource.labels[i] = res.data.myBudget[i].title;
+                }
+                createChart();
+            });
+        }
+
+        getBudget();
+    </script>
+</body>
+</html>
