@@ -143,7 +143,7 @@
                 <!--This is an A11y Accessibility change-->
                 <!--Having role="region" is used to mark region in the website used to mark significant regions.-->
                 <div class="text-box">
-                    <h3>Chart</h3>
+                    <h3>Week 04 Budget Pie Chart</h3>
                     <p>
                         <canvas id="myChart" width="400" height="400"></canvas>
                     </p>
@@ -178,10 +178,18 @@
                 {
                     data:[],
                     backgroundColor: [
-                        '#ffcd56',
-                        '#ff6384',
-                        '#36a2eb',
-                        '#fd6b19'
+                        //'#ffcd56',
+                        //'#ff6384',
+                        //'#36a2eb',
+                        //'#fd6b19',
+                        '#C70039', //red
+                        '#FFC300', //yellow
+                        '#16E738', //green
+                        '#339EFF', //blue
+                        '#C416E7', //purple
+                        '#FF5733', //orange
+                        '#ABB2B9' //grey
+
                     ],
                 }
             ],
@@ -200,9 +208,9 @@
             axios.get('/budget')
             .then(function (res){
                 console.log(res);
-                for(var i=0; i < res.data.myBudget.length; i++){
-                    dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
-                    dataSource.labels[i] = res.data.myBudget[i].title;
+                for(var i=0; i < res.data.modifiedBudget.length; i++){ //Using data from modifiedBudget array in w4budget.json file
+                    dataSource.datasets[0].data[i] = res.data.modifiedBudget[i].budget;
+                    dataSource.labels[i] = res.data.modifiedBudget[i].title;
                 }
                 createChart();
             });
@@ -210,5 +218,6 @@
 
         getBudget();
     </script>
+
 </body>
 </html>

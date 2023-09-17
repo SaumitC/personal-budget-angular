@@ -4,7 +4,7 @@ const port = 3000;
 
 app.use('/', express.static('public'));
 
-const budget = {
+/*const budget = {
     myBudget: [
     {
         title: 'Eat out',
@@ -19,14 +19,18 @@ const budget = {
         budget: 110
     },
 ]
-};
+};*/
+
+
 
 app.get('/hello', (req,res) => {
     res.send('Hello World!');
 });
 
+//Now getting data from modifiedBudget array present in w4budget.json file
+const modifiedData = require('./w4budget.json');
 app.get('/budget', (req,res) => {
-    res.json(budget);
+    res.json(modifiedData);
 });
 
 

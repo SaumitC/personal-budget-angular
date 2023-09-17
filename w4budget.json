@@ -1,0 +1,34 @@
+
+
+{
+    "modifiedBudget": [
+        {
+            "title": "Eat out",
+            "budget": 30
+        },
+        {
+            "title": "Rent",
+            "budget": 530
+        },
+        {
+            "title": "Grocery",
+            "budget": 160
+        },
+        {
+            "title": "College Fees",
+            "budget": 1200
+        },
+        {
+            "title": "Transportation",
+            "budget": 60
+        },
+        {
+            "title": "Bills",
+            "budget": 40
+        },
+        {
+            "title": "Video Games",
+            "budget": 100
+        }
+    ]
+}
