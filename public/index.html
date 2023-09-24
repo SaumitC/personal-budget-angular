@@ -231,7 +231,7 @@
 
         function getBudget() {
             var d3_chartData = [];
-            axios.get('/budget')
+            axios.get('http://localhost:3000/budget')
             .then(function (res){
                 console.log(res);
                 for(var i=0; i < res.data.modifiedBudget.length; i++){ //Using data from modifiedBudget array in w4budget.json file
