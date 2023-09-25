@@ -1,0 +1,18 @@
+<nav>
+  <!-- This is a Semantic HTML Change -->
+  <!-- The <nav> element tag encloses section of the code intended to have navigation links to
+  different sub pages(About, Login, Google) in the website. This is an important semantic
+  html change as it lets browser know the content enclosed in these tags contains navigation links. -->
+  <div class="menu">
+      <ul>
+          <li><a [routerLink]="['/']">Homepage</a></li>
+          <!--This is a SEO change.-->
+          <!--Added the rel="nofollow" attribute to the anchor tag which is pointing to google.com. This helps in
+          not increasing domain authority of an external website used in anchor tag so no other websites are
+          getting any advantage by just mentioning their URL's. This is also an important SEO practice. -->
+          <li><a [routerLink]="['/about']" rel="nofollow">About</a></li>
+          <li><a [routerLink]="['/login']" rel="nofollow">Login</a></li>
+          <li><a [routerLink]="['/contact']" rel="nofollow">Contact</a></li>
+      </ul>
+  </div>
+</nav>

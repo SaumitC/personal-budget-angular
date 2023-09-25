@@ -1,0 +1,105 @@
+<!--This is an A11y change-->
+    <!--I have added the role="main" which is an ARIA landmark which are an important feature to increase page accessibility.
+    This particular div has the role main attached to it and each website should have at most 1 main landmark.-->
+    <div role="main" class="container center">
+
+      <div class="page-area">
+        <pb-breadcrumbs></pb-breadcrumbs>
+          <pb-article role="region">
+              <!-- This is a Semantic HTML Change -->
+              <!-- The <article> element tag encloses independent content inside a section of a website.
+              In this website, I have used article tag to enclose different features of my personal budget site. -->
+              <div class="text-box">
+                  <!--This is an A11y Accessibility change-->
+                  <!--It is a common practice to only have 1 <h1> tag in the entire website which is usually used for
+                  denoting the heading. Other sub-headings can then use header tags from h2-h6. This is an important
+                  A11y change.-->
+                  <h3 slot-one>Stay on track</h3>
+                  <p slot-two>
+                      Do you know where you are spending your money? If you really stop to track it down,
+                      you would get surprised! Proper budget management depends on real data... and this
+                      app will help you with that!
+                  </p>
+              </div>
+          </pb-article>
+
+          <pb-article role="region">
+              <div class="text-box">
+                  <h3 slot-one>Alerts</h3>
+                  <p slot-two>
+                      What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
+                  </p>
+              </div>
+          </pb-article>
+
+
+          <pb-article role="region">
+              <div class="text-box">
+                 <h3 slot-one>Results</h3>
+                   <p slot-two>
+                      People who stick to a financial plan, budgeting every expense, get out of debt faster!
+                      Also, they to live happier lives... since they expend without guilt or fear...
+                      because they know it is all good and accounted for.
+                  </p>
+              </div>
+          </pb-article>
+
+
+          <pb-article role="region">
+              <div class="text-box">
+                 <h3 slot-one>Free</h3>
+                   <p slot-two>
+                      This app is free!!! And you are the only one holding your data!
+                  </p>
+              </div>
+          </pb-article>
+
+
+          <pb-article role="region">
+              <div class="text-box">
+                 <h3 slot-one>Stay on track</h3>
+                   <p slot-two>
+                      Do you know where you are spending your money? If you really stop to track it down,
+                      you would get surprised! Proper budget management depends on real data... and this
+                      app will help you with that!
+                  </p>
+              </div>
+          </pb-article>
+
+          <pb-article role="region">
+              <div class="text-box">
+                 <h3 slot-one>Alerts</h3>
+                   <p slot-two>
+                      What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
+                  </p>
+              </div>
+          </pb-article>
+
+
+          <pb-article role="region">
+              <div class="text-box">
+                 <h3 slot-one>Results</h3>
+                   <p slot-two>
+                      People who stick to a financial plan, budgeting every expense, get out of debt faster!
+                      Also, they to live happier lives... since they expend without guilt or fear...
+                      because they know it is all good and accounted for.
+                  </p>
+              </div>
+          </pb-article>
+
+
+          <pb-article role="region">
+              <!--This is an A11y Accessibility change-->
+              <!--Having role="region" is used to mark region in the website used to mark significant regions.-->
+              <div class="text-box">
+                 <h3 slot-one>Week 05 Budget Pie Chart</h3>
+                   <p slot-two>
+                      <canvas id="myChart" width="400" height="400"></canvas>
+                  </p>
+              </div>
+          </pb-article>
+          <h3 slot-one>Week 05 D3JS Chart</h3>
+          <div id="pie-chart"></div>
+      </div>
+
+  </div>
